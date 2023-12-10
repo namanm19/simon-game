@@ -1,0 +1,98 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(to bottom, #3498db, #2980b9);
+  font-family: "Montserrat", sans-serif;
+}
+
+.simon-game {
+  text-align: center;
+  color: #fff;
+  margin: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.btn-container {
+  display: grid;
+  grid-template-columns: repeat(2, 120px);
+  grid-gap: 20px;
+  margin: 0 auto; /* Center the grid */
+}
+
+.btn {
+  width: 120px;
+  height: 120px;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+#green {
+  background-color: #2ecc71;
+}
+
+#red {
+  background-color: #e74c3c;
+}
+
+#yellow {
+  background-color: #f39c12;
+}
+
+#blue {
+  background-color: #3498db;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 0 10px;
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #bdc3c7;
+  transform: scale(1.1);
+}
+
+#score {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.active {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
